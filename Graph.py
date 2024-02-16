@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 # Constants
 NUM_QUESTIONS = 17
 
-sections = ["Easy", "Medium", "Hard"]
+sections = ("Easy", "Medium", "Hard")
 
 YELLOW = int(NUM_QUESTIONS * .8)
 
@@ -25,10 +25,10 @@ def transition(sec_1, sec_2, sec_3):
     return elist, minimum, maximum, color
 
 
-stats, min_sec, max_sec, sec_color = transition(12, 8, 17)
 
 
 def graph():
+    stats, min_sec, max_sec, sec_color = transition(12, 8, 17)
     print(f"Your weakest section was {min_sec}\n")
     print(f"Your strongest section was {max_sec}\n\n")
 
