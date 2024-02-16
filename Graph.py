@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 # Constants
 NUM_QUESTIONS = 17
 
-sections = ("Easy", "Medium", "Hard")
+SECTIONS = ("Easy", "Medium", "Hard")
 
 YELLOW = int(NUM_QUESTIONS * .8)
 
