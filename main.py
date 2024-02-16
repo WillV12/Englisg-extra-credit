@@ -5,6 +5,8 @@
 # import NUnos file
 from time import sleep
 from colorama import Fore, Back, Style
+import os
+
 DOTS = "....."
 TITLE_PICTURE = '''     )                  )      )   (                     )      
   ( /(   (       (   ( /(   ( /(   )\\ )        *   )  ( /(      
@@ -39,6 +41,8 @@ def main():
         print(char + "\t", end="")
         sleep(.34)
     print()
+    os.system('cls')
+
 
     # MEDIUM MODE
     print("Beginning Wave 2 (intermidiate mode)")
@@ -46,6 +50,8 @@ def main():
         print(char + "\t", end="")
         sleep(.34)
     print()
+    os.system('cls')
+
 
     # AH IT'S SO HARD... SO HARD... IT'S SO HARD
     print("Beginning Wave 3 (HARD mode)")
@@ -53,6 +59,7 @@ def main():
         print(char + "\t", end="")
         sleep(.34)
     print()
+    os.system('cls')
 
 
 main()
