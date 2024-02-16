@@ -1,16 +1,21 @@
-# This is a sample Python script.
+#
+# Gavin McKenzie, Abram Head, Brandon Lehmann
+# 2/16/24
+# Main function for AP lang extra credit
+import #NUnos file
+from time import sleep
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def main():
+    print("Welcome to Kaboose.the!\nThe rules are simple...\n\tEnter the correct answer (A, B, C, or D)")
+    print("Beginning Wave 1 (easy mode)")
+    game(easy)
+    sleep(1)
+    print("Beginning Wave 2 (intermidiate mode)")
+    game(medium)
+    sleep(1)
+    print("Beginning Wave 3 (HARD mode)")
+    game(hard)
+    sleep(1)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+main()
