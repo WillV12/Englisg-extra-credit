@@ -2,8 +2,6 @@
 # Gavin McKenzie, Abram Head, Brandon Lehmann
 # 2/16/24
 # Main function for AP lang extra credit
-import Difficulties as difs
-import Question_setup as Qs
 from time import sleep
 from colorama import Fore, Back, Style
 import os
@@ -46,7 +44,8 @@ def main():
         sleep(.34)
     print()
     os.system('cls')
-    game.question_format(difs.easy()[0], difs.easy()[1])
+    easy_num_right, easy_num_wrong = game.question_format(difs.easy()[0], difs.easy()[1])
+
 
     # MEDIUM MODE
     print("Beginning Wave 2 (intermidiate mode)")
@@ -54,7 +53,8 @@ def main():
         print(char + "\t", end="")
         sleep(.34)
     print()
-
+    os.system('cls')
+    med_num_right, med_num_wrong = game.question_format(difs.medium()[0], difs.medium()[1])
 
 
     # AH IT'S SO HARD... SO HARD... IT'S SO HARD
@@ -64,6 +64,6 @@ def main():
         sleep(.34)
     print()
     os.system('cls')
-
+    hard_num_right, hard_num_wrong = game.question_format(difs.hard()[0], difs.hard()[1])
 
 main()
