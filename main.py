@@ -5,12 +5,10 @@
 from time import sleep
 from colorama import Fore, Back, Style
 import os
-import test_world as test
 import Difficulties as difs
 import game
 
 LETTERS = ["A.", "B.", "C.", "D."]
-COUNT = 4
 DOTS = "....."
 TITLE_PICTURE = '''     )                  )      )   (                     )      
   ( /(   (       (   ( /(   ( /(   )\\ )        *   )  ( /(      
@@ -46,8 +44,7 @@ def main():
         sleep(.34)
     print()
     os.system('cls')
-    deifnitions, words = difs.easy()
-    correct_answer, answer_index = test.Question_format(deifnitions, words, COUNT)
+    game.question_format(difs.easy()[0], difs.easy()[1])
 
     # MEDIUM MODE
     print("Beginning Wave 2 (intermidiate mode)")
@@ -55,9 +52,8 @@ def main():
         print(char + "\t", end="")
         sleep(.34)
     print()
-    os.system('cls')
-    deifnitions, words = difs.medium()
-    correct_answer, answer_index = test.question_format(deifnitions, words, COUNT)
+
+
 
     # AH IT'S SO HARD... SO HARD... IT'S SO HARD
     print("Beginning Wave 3 (HARD mode)")
@@ -66,8 +62,6 @@ def main():
         sleep(.34)
     print()
     os.system('cls')
-    deifnitions, words = difs.hard()
-    correct_answer, answer_index = test.question_format(deifnitions, words, COUNT)
-    game.input_and_checking(correct_answer, answer_index`)
+
 
 main()
