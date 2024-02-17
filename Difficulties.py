@@ -37,7 +37,7 @@ def medium():
 
 
 def hard():
-    hard_words = ["Antecedent", "Apostrophe", "Metonymy", "Exigence", "Didactic", "Syntax"]
+    hard_words = ["Antecedent", "Apostrophe", "Metonymy", "Exigence", "Didactic", "Syntax", "Invective"]
     definitions = ["The word, phrase, or clause referred to by a pronoun.",
                  "A figure of speech that directly addresses an absent or imaginary person or a "
                  "personified abstraction, such as liberty or love.",
@@ -45,6 +45,7 @@ def hard():
                  "closely associated with it.",
                  "The issue, problem, or situation that causes a person to write or speak.",
                  "Works with the primary aim of teaching or instructing.",
-                 "The way an author chooses to join words into phrases, clauses, and sentences."]
+                 "The way an author chooses to join words into phrases, clauses, and sentences.",
+                 "An emotionally violent, verbal denunciation or attack using strong, abusive language."]
 
     return definitions, hard_words
