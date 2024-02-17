@@ -1,13 +1,19 @@
 import random as r
 from time import sleep
 
-LETTERS = ["A.", "B.", "C.", "D."]
+
+questions = ["red", "green", "yellow", "orange", "purple"]
+answers = ["apple", "pear", "banana", "orange", "grape"]
+letters = ["A.", "B.", "C.", "D."]
 
 
-def Question_format(defs, words, count):
-    pass
-
-# print(f"A. {stuff[stuff_keys[r.randint(0,3)]]}")
-# print(f"B. {stuff[stuff_keys[r.randint(0,3)]]}")
-# print(f"C. {stuff[stuff_keys[r.randint(0,3)]]}")
-# print(f"D. {stuff[stuff_keys[r.randint(0,3)]]}")
+while len(questions) > 0:
+    rand_index = r.randint(0,5)
+    correct_pos = r.randint(0,4)
+    print(questions[rand_index])
+    
+    for x in letters:
+        
+        if 
+        else:
+            print(f"")
