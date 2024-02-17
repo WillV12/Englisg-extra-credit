@@ -45,7 +45,7 @@ def main():
     print()
     os.system('cls')
     easy_num_right, easy_num_wrong = game.question_format(difs.easy()[0], difs.easy()[1])
-
+    print(f"You got {easy_num_right} questions right\n\t and {easy_num_wrong} wrong... 😒")
 
     # MEDIUM MODE
     print("Beginning Wave 2 (intermidiate mode)")
@@ -55,6 +55,7 @@ def main():
     print()
     os.system('cls')
     med_num_right, med_num_wrong = game.question_format(difs.medium()[0], difs.medium()[1])
+    print(f"You got {med_num_right} questions right\n\t and {med_num_wrong} wrong... 😒")
 
 
     # AH IT'S SO HARD... SO HARD... IT'S SO HARD
@@ -65,5 +66,7 @@ def main():
     print()
     os.system('cls')
     hard_num_right, hard_num_wrong = game.question_format(difs.hard()[0], difs.hard()[1])
+    print(f"You got {hard_num_right} questions right\n\t and {hard_num_wrong} wrong... 😒")
+
 
 main()
