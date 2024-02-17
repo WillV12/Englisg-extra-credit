@@ -5,7 +5,7 @@
 def easy():
     easy_words = ["Extended Metaphor", "Parody", "Semantics", "Ambiguity", "Exemplification", "Analogy", "Theme"]
     word_bank = {"Extended Metaphor": "A metaphor developed at great length, occurring frequently in or throughout a "
-                                      "work.",
+                                    "work.",
                  "Parody": "A work that closely imitates the style or content of another with the specific aim of comic"
                            " effect and/or ridicule.",
                  "Semantics": "The branch of linguistics that studies the meaning of words, their historical and "
