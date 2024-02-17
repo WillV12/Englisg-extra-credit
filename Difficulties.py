@@ -3,7 +3,7 @@
 
 def easy():
     easy_words = ["Extended Metaphor", "Parody", "Semantics", "Ambiguity", "Exemplification", "Analogy", "Theme"]
-    word_bank = ["A metaphor developed at great length, occurring frequently in or throughout a "
+    definitions = ["A metaphor developed at great length, occurring frequently in or throughout a "
                  "work.",
                  "A work that closely imitates the style or content of another with the specific aim of comic"
                  " effect and/or ridicule.",
@@ -15,12 +15,12 @@ def easy():
                  "A similarity or comparison between two different things or the relationship between them.",
                  "The central idea or message of a work, the insight it offers into life."]
 
-    return word_bank, easy_words
+    return definitions, easy_words
 
 
 def medium():
     medium_words = ["Colloquialism", "Conceit", "Pedantic", "Periodic Sentence", "Loose Sentence", "Parallelism", "Thesis"]
-    word_bank = [" The use of slang or informalities in speech or writing.",
+    definitions = [" The use of slang or informalities in speech or writing.",
                  "A fanciful expression, usually in the form of an extended metaphor or surprising analogy "
                  "between seemingly dissimilar objects.",
                  "An adjective that describes words, phrases, or general tone that is overly scholarly, "
@@ -32,12 +32,12 @@ def medium():
                  "The sentence or group of sentences that directly expresses the author's opinion, purpose, "
                  "meaning, or proposition."]
 
-    return word_bank, medium_words
+    return definitions, medium_words
 
 
 def hard():
     hard_words = ["Antecedent", "Apostrophe", "Metonymy", "Exigence", "Didactic", "Syntax"]
-    word_bank = ["The word, phrase, or clause referred to by a pronoun.",
+    definitions = ["The word, phrase, or clause referred to by a pronoun.",
                  "A figure of speech that directly addresses an absent or imaginary person or a "
                  "personified abstraction, such as liberty or love.",
                  "A figure of speech in which the name of one object is substituted for that of another "
@@ -46,4 +46,4 @@ def hard():
                  "Works with the primary aim of teaching or instructing.",
                  "The way an author chooses to join words into phrases, clauses, and sentences."]
 
-    return word_bank, hard_words
+    return definitions, hard_words

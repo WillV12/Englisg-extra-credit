@@ -6,7 +6,10 @@
 from time import sleep
 from colorama import Fore, Back, Style
 import os
+import test_world as test
+import Difficulties as difs
 
+COUNT = 4
 DOTS = "....."
 TITLE_PICTURE = '''     )                  )      )   (                     )      
   ( /(   (       (   ( /(   ( /(   )\\ )        *   )  ( /(      
@@ -42,7 +45,8 @@ def main():
         sleep(.34)
     print()
     os.system('cls')
-
+    deifnitions, words = difs.easy()
+    test.Question_format(deifnitions, words, COUNT)
 
     # MEDIUM MODE
     print("Beginning Wave 2 (intermidiate mode)")
@@ -51,7 +55,8 @@ def main():
         sleep(.34)
     print()
     os.system('cls')
-
+    deifnitions, words = difs.medium()
+    test.Question_format(deifnitions, words, COUNT)
 
     # AH IT'S SO HARD... SO HARD... IT'S SO HARD
     print("Beginning Wave 3 (HARD mode)")
@@ -60,6 +65,7 @@ def main():
         sleep(.34)
     print()
     os.system('cls')
-
+    deifnitions, words = difs.hard()
+    test.Question_format(deifnitions, words, COUNT)
 
 main()
