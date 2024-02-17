@@ -2,13 +2,14 @@
 # Gavin McKenzie, Abram Head, Brandon Lehmann
 # 2/16/24
 # Main function for AP lang extra credit
-# import NUnos file
 from time import sleep
 from colorama import Fore, Back, Style
 import os
 import test_world as test
 import Difficulties as difs
+import game
 
+LETTERS = ["A.", "B.", "C.", "D."]
 COUNT = 4
 DOTS = "....."
 TITLE_PICTURE = '''     )                  )      )   (                     )      
@@ -46,7 +47,7 @@ def main():
     print()
     os.system('cls')
     deifnitions, words = difs.easy()
-    test.Question_format(deifnitions, words, COUNT)
+    correct_answer, answer_index = test.Question_format(deifnitions, words, COUNT)
 
     # MEDIUM MODE
     print("Beginning Wave 2 (intermidiate mode)")
@@ -56,7 +57,7 @@ def main():
     print()
     os.system('cls')
     deifnitions, words = difs.medium()
-    test.Question_format(deifnitions, words, COUNT)
+    correct_answer, answer_index = test.question_format(deifnitions, words, COUNT)
 
     # AH IT'S SO HARD... SO HARD... IT'S SO HARD
     print("Beginning Wave 3 (HARD mode)")
@@ -66,6 +67,7 @@ def main():
     print()
     os.system('cls')
     deifnitions, words = difs.hard()
-    test.Question_format(deifnitions, words, COUNT)
+    correct_answer, answer_index = test.question_format(deifnitions, words, COUNT)
+    game.input_and_checking(correct_answer, answer_index`)
 
 main()
