@@ -22,7 +22,6 @@ while len(questions) > 0:
         print(f"{x} {stuff[stuff_keys[other_index]]}")
         stuff_keys.remove(stuff_keys[other_index])
         sleep(.5)
-    print(questions)
     break
 
 # print(f"A. {stuff[stuff_keys[r.randint(0,3)]]}")
