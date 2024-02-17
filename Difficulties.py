@@ -1,3 +1,4 @@
+
 # Asking the questions
 # Exemplification, Parallelism, Ambiguity, Analogy, Didactic, Loose sentence,
 

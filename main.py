@@ -2,7 +2,8 @@
 # Gavin McKenzie, Abram Head, Brandon Lehmann
 # 2/16/24
 # Main function for AP lang extra credit
-# import NUnos file
+import Difficulties as difs
+import Question_setup as Qs
 from time import sleep
 from colorama import Fore, Back, Style
 import os
@@ -34,7 +35,7 @@ def main():
     print(f"Get ready {player_name}, things are about to get a little bit \
     {Fore.LIGHTYELLOW_EX}{Back.LIGHTRED_EX}{Style.BRIGHT}WICKED{Style.RESET_ALL}\n\n")
 
-    #EASY MODE
+    # EASY MODE
     print("Beginning Wave 1 (easy mode)")
 
     for char in DOTS:
@@ -42,7 +43,8 @@ def main():
         sleep(.34)
     print()
     os.system('cls')
-
+    word_bank, words = difs.easy()
+    Qs.questions(words, word_bank)
 
     # MEDIUM MODE
     print("Beginning Wave 2 (intermidiate mode)")
@@ -51,7 +53,7 @@ def main():
         sleep(.34)
     print()
     os.system('cls')
-
+    word_bank, words = difs.medium()
 
     # AH IT'S SO HARD... SO HARD... IT'S SO HARD
     print("Beginning Wave 3 (HARD mode)")
@@ -60,6 +62,7 @@ def main():
         sleep(.34)
     print()
     os.system('cls')
+    word_bank, words = difs.hard()
 
 
 main()
