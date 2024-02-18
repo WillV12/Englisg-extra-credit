@@ -37,13 +37,13 @@ def question_format(questions, answers):
 
             count += 1
             sleep(.5)
-        right, wrong = input_and_checking(letters[correct_pos])
-    return right, wrong
+        right, wrong_words = input_and_checking(letters[correct_pos], correct_ans)
+    return right, wrong_words
 
 
-def input_and_checking(answer):
+def input_and_checking(answer, correct_ans):
     letters = ["A", "B", "C", "D"]
-    num_wrong = 0
+    num_wrong = []
     num_right = 0
     user_answer = input("Enter answer (A, B, C, or D): ")
     user_answer = user_answer.upper()
@@ -58,5 +58,5 @@ def input_and_checking(answer):
         num_right += 1
     else:
         print("Incorrect 🥺🥺🥺🥺🥺\n")
-        num_wrong += 1
+        num_wrong.append(correct_ans)
     return num_right, num_wrong

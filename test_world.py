@@ -22,7 +22,7 @@ def question_format(questions, answers):
         print(questions[correct_index])
         count = 0
         for x in letters:
-            other_ans = r.choice(answers)
+                    other_ans = r.choice(answers)
             if count == correct_pos:
                 print(f"{x} {correct_ans}")
             else:

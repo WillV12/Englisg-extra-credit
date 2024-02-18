@@ -1,5 +1,5 @@
 #
-# Gavin McKenzie, Abram Head, Brandon Lehmann
+# Gavin McKenzie, Nuno Handem Ribero, Will Vanderploeg
 # 2/16/24
 # Main function for AP lang extra credit
 from time import sleep
@@ -7,6 +7,7 @@ from colorama import Fore, Back, Style
 import os
 import Difficulties as difs
 import game
+import graph
 
 LETTERS = ["A.", "B.", "C.", "D."]
 DOTS = "....."
@@ -44,8 +45,8 @@ def main():
         sleep(.34)
     print()
     os.system('cls')
-    easy_num_right, easy_num_wrong = game.question_format(difs.easy()[0], difs.easy()[1])
-    print(f"You got {easy_num_right} questions right\n\t and {easy_num_wrong} wrong... 😒")
+    easy_num_right, easy_wrong_words = game.question_format(difs.easy()[0], difs.easy()[1])
+
 
     # MEDIUM MODE
     print("Beginning Wave 2 (intermidiate mode)")
@@ -54,8 +55,7 @@ def main():
         sleep(.34)
     print()
     os.system('cls')
-    med_num_right, med_num_wrong = game.question_format(difs.medium()[0], difs.medium()[1])
-    print(f"You got {med_num_right} questions right\n\t and {med_num_wrong} wrong... 😒")
+    med_num_right, med_wrong_words = game.question_format(difs.medium()[0], difs.medium()[1])
 
 
     # AH IT'S SO HARD... SO HARD... IT'S SO HARD
@@ -65,8 +65,9 @@ def main():
         sleep(.34)
     print()
     os.system('cls')
-    hard_num_right, hard_num_wrong = game.question_format(difs.hard()[0], difs.hard()[1])
-    print(f"You got {hard_num_right} questions right\n\t and {hard_num_wrong} wrong... 😒")
+    hard_num_right, hard_wrong_words = game.question_format(difs.hard()[0], difs.hard()[1])
+
+    graph.graph()
 
 
 main()
