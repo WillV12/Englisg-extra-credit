@@ -68,7 +68,7 @@ def main():
     print()
     hard_num_right, hard_wrong_words = game.question_format(difs.hard()[0], difs.hard()[1], "Hard")
     print(f"{easy_num_right}\n{med_num_right}\n{hard_num_right}")
-    Graph.graph(easy_num_right, med_num_right, hard_num_right)
+    Graph.graph(easy_num_right, med_num_right, hard_num_right, easy_wrong_words, med_wrong_words, hard_wrong_words)
 
 
 main()
