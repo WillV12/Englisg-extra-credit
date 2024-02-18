@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from time import sleep
 # Constants
-NUM_QUESTIONS = 17
+NUM_QUESTIONS = 7
 
 SECTIONS = ("Easy", "Medium", "Hard")
 
@@ -14,6 +14,7 @@ def transition(sec_1, sec_2, sec_3):
     color = []
     elist = [sec_1, sec_2, sec_3]
     for section in elist:
+        print(section)
         if section > YELLOW:
             color.append("green")
         elif section > RED:
@@ -25,8 +26,13 @@ def transition(sec_1, sec_2, sec_3):
     return elist, minimum, maximum, color
 
 
+<<<<<<< Updated upstream:Graph.py
 def graph():
     stats, min_sec, max_sec, sec_color = transition(12, 8, 17)
+=======
+def graph(sec_1, sec_2, sec_3):
+    stats, min_sec, max_sec, sec_color = transition(sec_1, sec_2, sec_3)
+>>>>>>> Stashed changes:graph.py
     print(f"Your weakest section was {min_sec}\n")
     sleep(.5)
     print(f"Your strongest section was {max_sec}\n\n")
