@@ -1,4 +1,5 @@
-
+#
+# Brandon Lehmann, Nuno Handem Ribero
 # Asking the questions
 # Exemplification, Parallelism, Ambiguity, Analogy, Didactic, Loose sentence,
 

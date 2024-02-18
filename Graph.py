@@ -1,3 +1,5 @@
+#
+# Will Vanderploeg
 import matplotlib.pyplot as plt
 
 # Constants
