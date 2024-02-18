@@ -38,36 +38,37 @@ def main():
     {Fore.LIGHTYELLOW_EX}{Back.LIGHTRED_EX}{Style.BRIGHT}WICKED{Style.RESET_ALL}\n\n")
 
     # EASY MODE
+    os.system('cls')
     print("Beginning Wave 1 (easy mode)")
 
     for char in DOTS:
         print(char + "\t", end="")
         sleep(.34)
     print()
-    os.system('cls')
     easy_num_right, easy_wrong_words = game.question_format(difs.easy()[0], difs.easy()[1], "Easy")
 
 
     # MEDIUM MODE
+    os.system('cls')
     print("Beginning Wave 2 (intermidiate mode)")
+
     for char in DOTS:
         print(char + "\t", end="")
         sleep(.34)
     print()
-    os.system('cls')
     med_num_right, med_wrong_words = game.question_format(difs.medium()[0], difs.medium()[1], "Medium")
 
 
     # AH IT'S SO HARD... SO HARD... IT'S SO HARD
+    os.system('cls')
     print("Beginning Wave 3 (HARD mode)")
     for char in DOTS:
         print(char + "\t", end="")
         sleep(.34)
     print()
-    os.system('cls')
     hard_num_right, hard_wrong_words = game.question_format(difs.hard()[0], difs.hard()[1], "Hard")
     print(f"{easy_num_right}\n{med_num_right}\n{hard_num_right}")
-    graph.graph(easy_num_right, med_num_right, hard_num_right)
+    Graph.graph(easy_num_right, med_num_right, hard_num_right)
 
 
 main()

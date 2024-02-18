@@ -10,7 +10,6 @@ def question_format(questions, answers, mode):
     letters = ["A", "B", "C", "D"]
     answer_choices = answers[:]
     Q_counter = 1
-    num_right = 0
     num_wrong = []
     correct = 0
     for length in range(7):
@@ -39,13 +38,12 @@ def question_format(questions, answers, mode):
                 answer_indexs.append(other_ans)
                 print(f"{x} {answer_indexs[count2]}")
                 count2 += 1
-                count += 1
-                sleep(.5)
+            count += 1
+            sleep(.5)
         user_answer = input_and_checking(letters)
-        if user_answer == correct_ans:
+        if user_answer == letters[correct_pos]:
             print("Correct!!!\n")
             correct += 1
-            print(num_right)
         else:
             print("Incorrect 🥺🥺🥺🥺🥺\n")
             num_wrong.append(correct_ans)
