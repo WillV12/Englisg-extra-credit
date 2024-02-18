@@ -2,7 +2,6 @@
 # Gavin McKenzie, Abram Head, Brandon Lehmann
 # 2/16/24
 # Main function for AP lang extra credit
-import Difficulties as difs
 import Question_setup as Qs
 from time import sleep
 from colorama import Fore, Back, Style

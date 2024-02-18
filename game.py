@@ -54,6 +54,7 @@ def question_format(questions, answers, mode):
             sleep(.5)
         input_and_checking(letters[correct_pos])
 
+
 def input_and_checking(answer):
     user_answer = input("Enter answer (A, B, C, or D): ")
     user_answer = user_answer.upper()
@@ -65,6 +66,7 @@ def input_and_checking(answer):
             print("Incorrect")
     else:
         input_and_checking(answer)
+<<<<<<< Updated upstream
 =======
                 other_ans = r.choice(answer_choices)
                 while other_ans in answer_indexs:
@@ -100,4 +102,6 @@ def input_and_checking(letters):
 
     return user_answer
 
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

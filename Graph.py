@@ -1,3 +1,4 @@
+# Will Vanderploeg
 import matplotlib.pyplot as plt
 from time import sleep
 # Constants
@@ -61,5 +62,3 @@ def graph(sec_1, sec_2, sec_3):
     plt.ylim(0)
     plt.show()
 
-
-graph()
