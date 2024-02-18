@@ -7,7 +7,7 @@ from colorama import Fore, Back, Style
 import os
 import Difficulties as difs
 import game
-import graph
+import Graph
 
 LETTERS = ["A.", "B.", "C.", "D."]
 DOTS = "....."
