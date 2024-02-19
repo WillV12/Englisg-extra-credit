@@ -53,6 +53,7 @@ def graph(sec_1, sec_2, sec_3, wrong1, wrong2, wrong3):
     print(f"accuracy = {section[0] + section[1] + section[2]}/{NUM_QUESTIONS*3} or {total:.2f}%\n")
     plt.bar(SECTIONS, stats, color=sec_color)
     plt.title("Stats")
+    plt.ylim(0, 100)
     plt.xlabel("Section Difficulty")
-    plt.ylabel("# Correct")
+    plt.ylabel("% Correct")
     plt.show()
