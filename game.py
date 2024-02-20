@@ -33,12 +33,10 @@ def question_format(questions, answers, mode):
             if other_ans == correct_ans:
                 other_ans = r.choice(answer_choices)
             answer_indexs.append(other_ans)
-            print(answer_indexs)
         for x in letters:
             if count == correct_pos:
                 print(f"{x} {correct_ans}")
             else:
-                print(answer_indexs)
                 print(f"{x} {answer_indexs[count2]}")
                 count2 += 1
             count += 1
