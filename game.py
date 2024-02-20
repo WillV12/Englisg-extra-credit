@@ -61,4 +61,4 @@ def input_and_checking(letters):
         user_answer = user_answer.upper()
 
     return user_answer
-
+ 
